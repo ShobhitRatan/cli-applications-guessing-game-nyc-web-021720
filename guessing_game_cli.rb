@@ -23,4 +23,11 @@ def check_num(number, input)
   else
     puts "/Sorry! The computer guessed #{number}./"
   end
-end 
+end
+
+def run_guessing_game
+  guess_ask
+  num = generate_num
+  input = prompt_input
+  check_num(num, input)
+end
